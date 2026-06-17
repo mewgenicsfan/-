@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Binding of Isaac: Repentance+</title>
+    <!-- Font Awesome (иконки) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- ШАПКА с логотипом в стиле "подвал" -->
+        <header>
+            <div class="logo">
+                <i class="fas fa-skull"></i>
+                <h1>Binding of Isaac</h1>
+                <span>Repentance+</span>
+            </div>
+            <div class="subhead">
+                <i class="fas fa-tint"></i>  Покаяние продолжается  <i class="fas fa-cross"></i>
+            </div>
+        </header>
+
+        <!-- НАВИГАЦИЯ -->
+        <nav class="tabs" id="tabNav">
+            <button class="tab-btn active" data-tab="about"><i class="fas fa-book-open"></i> Об игре</button>
+            <button class="tab-btn" data-tab="characters"><i class="fas fa-user-astronaut"></i> Персонажи</button>
+            <button class="tab-btn" data-tab="endings"><i class="fas fa-flag-checkered"></i> Концовки & пути</button>
+        </nav>
+
+        <!-- ===== СЕКЦИЯ 1: ОБ ИГРЕ ===== -->
+        <section id="about" class="content-section active">
+            <h2><i class="fas fa-dragon"></i> О Repentance+</h2>
+            <p class="lead">
+                <i class="fas fa-quote-left" style="color:#8b5b3a;"></i> 
+                The Binding of Isaac: Repentance+ — это окончательная версия культового рогалика. 
+                Тысячи комбинаций, мрачные тайны и финал, который изменит всё.
+            </p>
+            <div class="fact-box">
+                <i class="fas fa-hat-wizard"></i>
+                <blockquote>
+                    «Repentance+ — это не просто дополнение, это переосмысление всей вселенной Isaac'а. 
+                    Тьма стала глубже, а слёзы — горше.»
+                    <cite>— Эдмунд Макмиллен</cite>
+                </blockquote>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item"><i class="fas fa-skull-crossbones"></i> 700+ предметов</div>
+                <div class="feature-item"><i class="fas fa-map"></i> Новые этажи</div>
+                <div class="feature-item"><i class="fas fa-users"></i> 30+ персонажей</div>
+                <div class="feature-item"><i class="fas fa-trophy"></i> Множество финалов</div>
+            </div>
+        </section>
+
+        <!-- ===== СЕКЦИЯ 2: ПЕРСОНАЖИ И РАЗБЛОКИРОВКА ===== -->
+        <section id="characters" class="content-section">
+            <h2><i class="fas fa-users"></i> Персонажи & разблокировка</h2>
+            <div class="grid" id="characterGrid">
+                <!-- заполняется JS -->
+            </div>
+        </section>
+
+        <!-- ===== СЕКЦИЯ 3: КОНЦОВКИ И ПУТИ ===== -->
+        <section id="endings" class="content-section">
+            <h2><i class="fas fa-flag-checkered"></i> Концовки & пути</h2>
+            <div class="ending-list" id="endingList">
+                <!-- заполняется JS -->
+            </div>
+            <div class="path-note">
+                <i class="fas fa-arrow-right"></i>  Каждое решение ведёт к новой концовке. Пути переплетаются в Repentance+.
+            </div>
+        </section>
+
+        <!-- ФУТЕР -->
+        <footer>
+            <i class="fas fa-cross"></i>  Сделано фанатами для фанатов  <i class="fas fa-cross"></i><br>
+            <span>The Binding of Isaac &copy; Edmund McMillen, Nicalis. Неофициальный сайт.</span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
